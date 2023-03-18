@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500;600;700&display=swap');
+
+.body{
+    background: linear-gradient(90deg, #7F00FF, #E100FF);
+}
+
+*{
+    color: #fff;
+    font-family: 'Mali', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ====================Navbar================== */
+.nav{
+    padding: 10px 0;
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+.nav__logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav__logo:hover{
+    color: #e5e5e5;
+    transition: .2s all ease;
+}
+.nav__menu{
+    display: flex;
+    column-gap: 20px;
+}
+.nav__menu-link{
+    font-size: 25px;
+}
+.nav__menu-link:hover{
+    color: #e5e5e5;
+    transition: .2s all ease;
+}
+
+@media(max-width:330px){
+    .nav__menu{
+        column-gap: 10px;
+    }
+    .nav__menu-link{
+        font-size: 22px;
+    }
+}
+
+/* ====================Todo List================== */
+.todo__list{
+    margin-bottom: 30px;
+}
+/* ====================Todo Card================== */
+.todo__title{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+.todo__form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.form__input{
+    width: 53%;
+    padding: 12px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #000;
+    box-shadow: 0 0 5px #fff;
+}
+.form__input:focus{
+    box-shadow: 0 0 10px #fff;
+}
+.form__btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 12px 60px;
+    border-radius: 20px;
+    color: #fff;
+}
+.form__btn:active{
+    transform: scale(1.1);
+}
+.todo__card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.todo__card-text{
+    max-width: 200px;
+}
+.todo__card-icons{
+    display: flex;
+    column-gap: 15px;
+}
+.todo-icon{ 
+    cursor: pointer;
+}
+.todo__card-edit{
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 180px;
+}
+@media(max-width:992px){
+    .form__input{
+        width: 100%;
+    }
+}
+@media(max-width:770px){
+    .todo__title{
+        font-size: 35px;
+    }
+}
+@media(max-width:550px){
+    .todo__title{
+        font-size: 30px;
+    }
+    .form__btn{
+        padding: 10px 70px;
+    }
+}
